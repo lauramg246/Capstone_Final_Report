@@ -47,10 +47,10 @@
 1. tenure
 2. MonthlyCharges
 3. TotalCharges
-4. SeniorCitizen
 
-### Categorical Features (One-Hot Encoded, drop_first=True)
+### Categorical Features (Binary/Dummy Variables)
 
+4. SeniorCitizen (already binary, no encoding needed)
 5. gender_Male
 6. Partner_Yes
 7. Dependents_Yes
