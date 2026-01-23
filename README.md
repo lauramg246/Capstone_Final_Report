@@ -50,11 +50,11 @@ The project is organized into four main steps:
 
 | Metric | Value |
 |--------|-------|
-| **ROC-AUC** | **0.865** (86.5%) |
-| **Accuracy** | 0.813 (81.3%) |
-| **Precision** | 0.700 (70.0%) |
-| **Recall** | 0.531 (53.1%) |
-| **F1 Score** | 0.604 (60.4%) |
+| **ROC-AUC** | **0.8654** (86.5%) |
+| **Accuracy** | 0.8148 (81.5%) |
+| **Precision** | 0.6972 (69.7%) |
+| **Recall** | 0.5308 (53.1%) |
+| **F1 Score** | 0.6027 (60.3%) |
 
 > **Note**: The model prioritizes recall and ROC-AUC, as missing a customer who will churn is more costly than a false alarm. Retention efforts can be applied to both true positives and false positives.
 
@@ -130,7 +130,7 @@ The project is organized into four main steps:
 ## Model Selection Rationale
 
 Gradient Boosting was selected as the final model because it:
-- Achieved the highest **ROC-AUC score (0.865)**, indicating excellent ranking ability
+- Achieved the highest **ROC-AUC score (0.8654)**, indicating excellent ranking ability
 - Demonstrated the best **recall (53.1%)** for churn detection
 - Showed strong performance on imbalanced data
 - Provided interpretable feature importance rankings
