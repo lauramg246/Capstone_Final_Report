@@ -20,11 +20,11 @@
 
 | Metric | Value | Percentage |
 |--------|-------|------------|
-| Accuracy | 0.8134 | 81.3% |
-| Precision | 0.7000 | 70.0% |
+| Accuracy | 0.8148 | 81.5% |
+| Precision | 0.6972 | 69.7% |
 | Recall | 0.5308 | 53.1% |
-| F1 Score | 0.6038 | 60.4% |
-| ROC-AUC | 0.8650 | 86.5% |
+| F1 Score | 0.6027 | 60.3% |
+| ROC-AUC | 0.8654 | 86.5% |
 
 ### Classification Report
 
@@ -86,15 +86,15 @@
 | Rank | Feature |
 |------|---------|
 | 1 | tenure |
-| 2 | MonthlyCharges |
-| 3 | TotalCharges |
+| 2 | InternetService_Fiber optic |
+| 3 | PaymentMethod_Electronic check |
 | 4 | Contract_Two year |
-| 5 | InternetService_Fiber optic |
-| 6 | Contract_One year |
-| 7 | PaymentMethod_Electronic check |
+| 5 | Contract_One year |
+| 6 | MonthlyCharges |
+| 7 | TotalCharges |
 | 8 | OnlineSecurity_Yes |
-| 9 | TechSupport_Yes |
-| 10 | PaperlessBilling_Yes |
+| 9 | PaperlessBilling_Yes |
+| 10 | StreamingMovies_Yes |
 
 > **Note:** Exact importance values are computed when running the Jupyter notebook
 
@@ -113,4 +113,5 @@
 1. **Missing Value Handling**: TotalCharges empty strings filled with MonthlyCharges
 2. **Feature Encoding**: `pd.get_dummies()` with `drop_first=True`
 3. **Feature Scaling**: StandardScaler on tenure, MonthlyCharges, TotalCharges
+
 
