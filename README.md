@@ -33,7 +33,7 @@ The project is organized into four main steps:
    - Identification of churn patterns and correlations
 
 3. **Step 3: Preprocessing** (`Capstone_two_step_3_preprocessing_training_data.ipynb`)
-   - Feature encoding (one-hot encoding for categorical variables)
+   - Feature encoding (dummy variables with drop_first=True for categorical variables)
    - Feature scaling (StandardScaler for numeric features)
    - Train-test split (80/20)
 
@@ -114,7 +114,7 @@ The project is organized into four main steps:
 - **Ensemble Methods**: Outperformed KNN significantly on this tabular dataset
 - **Hyperparameter Tuning**: GridSearchCV used to optimize model parameters
 - **Feature Engineering**: 30 engineered features from original dataset
-- **Data Preprocessing**: StandardScaler for numeric features, one-hot encoding for categorical variables
+- **Data Preprocessing**: StandardScaler for numeric features, dummy variables (drop_first=True) for categorical variables
 
 ---
 
